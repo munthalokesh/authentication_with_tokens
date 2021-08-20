@@ -24,7 +24,7 @@ const initializeServer = async () => {
 };
 
 initializeServer();
-
+//below function is middleware function
 const authentication = (request, response, next) => {
   let jwtToken;
   const authHeader = request.headers["authorization"];
